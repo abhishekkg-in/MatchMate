@@ -62,7 +62,7 @@ The frontend will run on [**http://localhost:5173**](http://localhost:5173) by d
 ## 🛠️ API Documentation
 
 - The API documentation is available via Swagger.
-- Run the backend and visit `http://127.0.0.1:5000/docs` for API details.
+- Run the backend and visit `http://127.0.0.1:5000/apidocs/#/` for API details.
 
 ---
 
