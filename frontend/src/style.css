@@ -1,0 +1,24 @@
+:root {
+  --primary: #2a9d8f;
+  --secondary: #264653;
+  --accent: #e9c46a;
+  --dark: #1a1a1a;
+}
+
+// Animations
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// Custom cards
+.my-card {
+  transition: transform 0.3s;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
