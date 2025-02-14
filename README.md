@@ -16,23 +16,24 @@ Welcome to **MatchMate**, your ultimate sports management platform! This web app
 
 - Vue.js (Vite)
 - Quasar Framework
-- Tailwind CSS (optional)
 
 ### Backend:
 
 - Python (Flask)
 - SQLAlchemy (Database ORM)
-- SQLite/PostgreSQL (Database)
+- SQLite (Database)
 
 ---
 
-## 🔧 Setup Instructions
+## 🛠️ Setup Instructions
 
 ### 1️⃣ Clone the Repository
 
+If cloning does not work, download the code as a ZIP file and extract it.
+
 ```sh
 git clone https://github.com/yourusername/matchmate.git
-cd matchmate
+cd MatchMate
 ```
 
 ### 2️⃣ Backend Setup (Flask)
@@ -59,7 +60,13 @@ The frontend will run on [**http://localhost:5173**](http://localhost:5173) by d
 
 ---
 
-## 🛠️ API Documentation
+## 🛠️ Important Note
+
+When running the application for the first time, the database will be empty. To populate it with data, use the Swagger API documentation to add clubs, players, and teams manually. Without this step, the frontend will not display any data.
+
+---
+
+## 📌 API Documentation
 
 - The API documentation is available via Swagger.
 - Run the backend and visit `http://127.0.0.1:5000/apidocs/#/` for API details.
@@ -69,7 +76,7 @@ The frontend will run on [**http://localhost:5173**](http://localhost:5173) by d
 ## 📌 Deployment
 
 - **Frontend:** Can be deployed using Netlify, Vercel, or any static hosting service.
-- **Backend:** Deploy using Flask on AWS/GCP/Heroku with PostgreSQL.
+- **Backend:** Deploy using Flask on AWS/GCP/Heroku with SQLite.
 
 ---
 
@@ -79,7 +86,7 @@ Feel free to fork and contribute! Open a pull request with improvements.
 
 ---
 
-## 📜 License
+## 🐟 License
 
 This project is licensed under the MIT License.
 
