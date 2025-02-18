@@ -91,8 +91,7 @@ class TeamResource(Resource):
         except Exception as e:
             return jsonify({"error": str(e)}), 500 # Handle exceptions and return 500
 
-
-    
+   
 class TeamResouceUpdateDelete(Resource):
     @swag_from({
         'parameters': [
@@ -197,8 +196,6 @@ class TeamResouceUpdateDelete(Resource):
             return jsonify({"message": "Team deleted successfully"})
         except Exception as e:
             return jsonify({"error": str(e)})
-
-
 
 
 class PlayerResource(Resource):
@@ -337,7 +334,6 @@ class PlayerResource(Resource):
             return jsonify({"error": str(e)})
 
     
-
 class PlayerResourceUpdateDelete(Resource):
     @swag_from({
         'parameters': [
@@ -453,7 +449,6 @@ class PlayerResourceUpdateDelete(Resource):
         except Exception as e:
             return jsonify({"error": str(e)})
         
-
 
 class MatchResource(Resource):
     @swag_from({
@@ -592,8 +587,6 @@ class MatchResource(Resource):
             return jsonify({"error": str(e)}), 500
     
 
-    
-
 class MatchResourceUpdateDelete(Resource):
     @swag_from({
         'parameters': [
@@ -727,6 +720,7 @@ class AreaResource(Resource):
     def get(self):
         areas = Area.query.all()
         return jsonify([{"id": area.id, "name": area.name} for area in areas])
+
 
 def register_routes(api):
     api.add_resource(TeamResource, '/teams')
